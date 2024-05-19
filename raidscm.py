@@ -23,7 +23,7 @@ def sentiment_analysis(df):
     return df
 
 def topic_generation(df):
-    tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+    tokenizer =GPT2Tokenizer.from_pretrained('gpt2')
     model = GPT2LMHeadModel.from_pretrained('gpt2')
 
     def generate_topic(text):
