@@ -1,0 +1,14 @@
+data:
+  url: 'https://www.example.com/supply-chain-news'
+
+model:
+  embedding_dim: 128
+  lstm_units: 64
+  dense_units: 64
+  dropout_rate: 0.5
+  epochs: 5
+  batch_size: 32
+
+training:
+  test_size: 0.2
+  random_state: 42
