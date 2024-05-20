@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - CONFIG_PATH=/app/config/config.yaml
+    command: python src/main.py
